@@ -10,26 +10,33 @@
 	<h1>Shehzad</h1>
 
 	<button id="btn">Click to Notify</button>
+	<h3>allow karo gye tw chale ga</h3>
 	<script>
-		document.querySelector('#btn').addEventListener('click', ()=>{
+		new Notification("Shehzad Example Notification",{
+						body:"Ye kuxh aur example text hy nazar aaraha hoga aplogo ko",
+					})
 
-			Notification.requestPermission().then(permission=>{
+		// document.querySelector('#btn').addEventListener('click', ()=>{
+
+		// 	Notification.requestPermission().then(permission=>{
 				
-				console.log(permission);
+		// 		console.log(permission);
 				
-				// if(permission==="denied") alert("Permission denied."); 
+		// 		// if(permission==="denied") alert("Permission denied."); 
 
-				if(permission==="granted"){
-					new Notification("Example Notification")
-				}
-				// if(permission==="granted"){}
+		// 		if(permission==="granted"){
+		// 			new Notification("Shehzad Example Notification",{
+		// 				body:"Ye kuxh aur example text hy nazar aaraha hoga aplogo ko",
+		// 			})
+		// 		}
+		// 		// if(permission==="granted"){}
 				
 				
-			})
+		// 	})
 
 
 
-		});
+		// });
 	</script>
 </body>
 </html>
